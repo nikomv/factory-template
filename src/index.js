@@ -49,8 +49,8 @@ class Factory {
   }
 }
 
-const factory = new Factory();
 
 PEOPLE_LIST.forEach((card) => {
+  const factory = new Factory();
   ROOT.innerHTML += factory.create(card);
 });
